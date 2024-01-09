@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+}
+.block {
+    background-color: hwb(0 80% 15%);
+    width: 1000px;
+    height: 500px;
+    padding: 5px;
+    border: 1px solid black;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    overflow: auto;
+}
+.element {
+    width: 200px;
+    height: 200px;
+    background-color: #f2c3c3;
+    padding: 5px 20px;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: -1px -1px 15px #725ab3 inset ;
+    display: inline-block;
+    overflow: hidden;
+}
