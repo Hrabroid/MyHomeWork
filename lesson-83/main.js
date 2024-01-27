@@ -1,12 +1,17 @@
-const student = {
-    name: 'Alex',
-    age: 36,
-    education: 'higher',
-    maritalStatus: 'married'
+const students = {
+    Student_1: {
+        name: 'Alex',
+        age: 36,
+        education: 'higher',
+        maritalStatus: 'married',
+        sayHello(name) {
+            console.log(`Hello, ${name}`)
+        }
+    }
 }
 
-console.log(student)
-console.log('Hello, ' + student.name + '!')
+console.log(students.Student_1)
+students.Student_1.sayHello(`John`)
 
 const users = [
     {
@@ -26,15 +31,15 @@ const users = [
     }
 ]
 
-let notAdmins =  0
+let notAdmins = 0
 
-    for (i = 0; i < users.length; i++) {
-        let status = users[i].isAdmin
-        if (status === false) {
-            notAdmins++
-        }
+for (i = 0; i < users.length; i++) {
+    let status = users[i].isAdmin
+    if (status === false) {
+        notAdmins++
     }
-    console.log(notAdmins)
+}
+console.log(notAdmins)
 
 
 
