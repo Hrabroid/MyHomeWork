@@ -64,7 +64,7 @@
             const accordionList = e.currentTarget
             const accordionOpenedItem = accordionList.querySelector('.accordion-list__item--opened')
             const accordionOpenedContent = accordionList.querySelector('.accordion-list__item--opened .accordion-list__content')
-            
+
             const accordionControl = e.target.closest('.accordion-list__control');
             if (!accordionControl) return;
             const accordionItem = accordionControl.parentElement;
@@ -85,4 +85,35 @@
 
     });
 
-})()
+    const swiper = new Swiper('.gallery__slider', {
+        slidesPerView: 1.5,
+        spaceBetween: 15,
+        pagination: {
+            el: '.gallery__pagination',
+            type: 'fraction'
+        },
+
+        navigation: {
+            nextEl: '.gallery__next',
+            prevEl: '.gallery__prev',
+        },
+
+        breakpoints: {
+            
+            451: {
+                slidesPerView: 2,
+            },
+            601: {
+                slidesPerView: 3,
+            },
+            801: {
+                spaceBetween: 32,
+            },
+            1101: {
+                slidesPerView: 4,
+            }
+        }
+
+});
+
+}) ()
