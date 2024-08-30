@@ -44,13 +44,12 @@
     padding: 140px 0;
 }
 
-.main__program {
+.main__program,
+.main__testimonials,
+.main__gallery {
     margin-bottom: 140px;
 }
 
-.main__gallery {
-    padding-bottom: 140px;
-}
 
 .title {
     font-family: 'Gabriola';
