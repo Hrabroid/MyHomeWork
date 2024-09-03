@@ -6,6 +6,11 @@
     --accent-color: #FFA55C;
 }
 
+html {
+    scroll-behavior: smooth;
+    scroll-padding: 5vw;
+}
+
 .body {
     font-family: 'Montserrat', 'Arial', sans-serif;
     line-height: 1.5;
@@ -138,8 +143,6 @@
 .modal__text {
     margin-bottom: 30px;
 }
-
-.modal__form {}
 
 .modal__form-label {
     margin-bottom: 10px;
